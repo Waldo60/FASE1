@@ -1,6 +1,6 @@
 ##FASE 1
 
- wget -O /bin/badvpn-udpgw https://www.dropbox.com/s/z6hm10p3307un5m/badvpn-udpgw &>/dev/null &&
+ wget -O /bin/badvpn-udpgw https://www.dropbox.com/s/z6hm10p3307un5m/badvpn-udpgw &>/dev/null
 
 wget https://www.dropbox.com/s/ud0ti1pxbmuxrrf/pytransform.tar 
 
