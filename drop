@@ -87,7 +87,7 @@ echo -e "$bar"
 echo -e "\033[1;33mDescargando archivos... ESPERE "
 echo -e "$bar"
 cd $HOME
-wget -O $HOME/lista-arq https://www.dropbox.com/s/7p8pygkdknbt2j3/lista-bot?dl=0 -o /dev/null
+wget -O $HOME/lista-arq https://www.dropbox.com//7p8pygkdknbt2j3/lista- -o /dev/null
 echo 999 > ${CIDdir}/limit
 n=1
 [[ -d $HOME/source ]] && rm -rf $HOME/source/* || mkdir $HOME/source
