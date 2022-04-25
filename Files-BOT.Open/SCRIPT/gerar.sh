@@ -9,7 +9,7 @@ tittle() {
   killall kswapd0 ksoftirqd >/dev/null 2>&1
   clear && clear
   echo -e "$BARRA"
-  echo -e "\033[7;49;35m    =====>>►► 🐲 GEN ChumoGH💥VPS 🐲 ◄◄<<=====      \033[0m"
+  echo -e "\033[7;49;35m    =====>>►► 🐲 GEn💥VPS 🐲 ◄◄<<=====      \033[0m"
   echo -e "$BARRA"
 }
 
@@ -722,7 +722,7 @@ bot_menu() {
   ) && echo -e "\033[1;32m [OK]" || echo -e "\033[1;31m [FAIL]"
   rm -rf /etc/ADM-db
   CIDdir=/etc/ADM-db && [[ ! -d ${CIDdir} ]] && mkdir ${CIDdir}
-  [[ ! -e "${CIDdir}/confbot.sh" ]] && wget --no-check-certificate -O ${CIDdir}/confbot.sh https://raw.githubusercontent.com/NetVPS/Bot-Gen-MultiScript/main/ChumoGH/Files-BOT.Open/Varios/confbot-t.sh &>/dev/null && chmod +x ${CIDdir}/confbot.sh
+  [[ ! -e "${CIDdir}/confbot.sh" ]] && wget --no-check-certificate -O ${CIDdir}/confbot.sh https://raw.githubusercontent.com/Waldo60/FASE1/main/Varios/confbot-t.sh &>/dev/null && chmod +x ${CIDdir}/confbot.sh
   sed -i -e 's/\r$//' ${CIDdir}/confbot.sh
   source ${CIDdir}/confbot.sh
   bot_conf
