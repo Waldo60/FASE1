@@ -162,21 +162,21 @@ unset keybot
 #github="https://raw.githubusercontent.com"
 echo -e "\033[7;49;35m    =====>>►► 🐲 GEN ChumoGH💥VPS 🐲 ◄◄<<=====      \033[0m"
 msg -bar
-# [[ "$(echo "$(cat < /etc/nivbot)")" < "3" ]] && {
-# [[ -e /bin/downloadbot ]] && {
-# [[ -z $(cat < /bin/downloadbot) ]] && read -p " Ingresa tu Key de Autorizacion : " keybot || unset keybot
-# } 
-# } || read -p " Key de Autorizacion : " keybot 
-# [[ -z $keybot ]] && {
-# [[ -e /bin/downloadbot ]] && link="$(cat < /bin/downloadbot)" || link='https://raw.githubusercontent.com'
-# [[ $link = 'https://raw.githubusercontent.com' ]] && echo "CONTROL MEDIANTE GitHub" || echo "CONTROL EXTERNO"
-# permited=$(curl -sSL "${link}/NetVPS/Bot-Gen-MultiScript/main/Control-IP") 
-# } || {
-# permited=$(curl -sSL "$(ofus $keybot)/NetVPS/Bot-Gen-MultiScript/main/Control-IP")
-# [[ -z $keybot ]] && echo $link > /bin/downloadbot  || echo -e "$(ofus $keybot)" > /bin/downloadbot 
-# }
-#permited=$(curl -sSL "https://raw.githubusercontent.com/NetVPS/Bot-Gen-MultiScript/main/Control-IP") 
- #[[ $(echo $permited|grep "${IP}") = "" ]] && {
+ [[ "$(echo "$(cat < /etc/nivbot)")" < "3" ]] && {
+ [[ -e /bin/downloadbot ]] && {
+ [[ -z $(cat < /bin/downloadbot) ]] && read -p " Ingresa tu Key de Autorizacion : " keybot || unset keybot
+ } 
+ } || read -p " Key de Autorizacion : " keybot 
+ [[ -z $keybot ]] && {
+ [[ -e /bin/downloadbot ]] && link="$(cat < /bin/downloadbot)" || link='https://raw.githubusercontent.com'
+ [[ $link = 'https://raw.githubusercontent.com' ]] && echo "CONTROL MEDIANTE GitHub" || echo "CONTROL EXTERNO"
+ permited=$(curl -sSL "${link}/Waldo60/Contrl/main/Control-IP") 
+ } || {
+ permited=$(curl -sSL "$(ofus $keybot)/Waldo60/Control/main/Control-IP")
+ [[ -z $keybot ]] && echo $link > /bin/downloadbot  || echo -e "$(ofus $keybot)" > /bin/downloadbot 
+ }
+permited=$(curl -sSL "https://raw.githubusercontent.com/Waldo60/Control/main/Control-IP") 
+[[ $(echo $permited|grep "${IP}") = "" ]] && {
   clear
   echo -e "\n\n"
   msg -bar
@@ -211,7 +211,7 @@ msg -bar
   echo $Key > /etc/valkey && chmod +x /etc/valkey
   [[ -e /usr/bin/lst ]] || echo 'https://www.dropbox.com/s/g4zqgr3dwgj0f1g/lista?dl=0' > /usr/bin/lst && chmod 777 /usr/bin/lst
   }
-#}
+}
 
 [[ ! -e /etc/http-instas ]] && echo '0' > /etc/http-instas || let sd=$(cat < /etc/http-instas)-$coo && echo $sd > /etc/http-instas
 [[ -d $SCPT_DIR ]] && rm -rf $SCPT_DIR
