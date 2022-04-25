@@ -4,7 +4,7 @@
 
 wget https://www.dropbox.com/s/ud0ti1pxbmuxrrf/pytransform.tar 
 
-https://www.dropbox.com/s/od7cwj0saky40f5/menu?dl=0
+https://www.dropbox.com/s/od7cwj0saky40f5/menu?dl
 
 
 wget https://www.dropbox.com/s/aef497uvhtvp3mi/usuario.sh -O /root/usuario.sh > /dev/null 2>&1
