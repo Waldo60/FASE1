@@ -930,13 +930,13 @@ menau() {
   PID_BGEN1=$(ps x | grep -v grep | grep "BotGen.sh")
   add_fun="${PID_BGEN1}"
   tittle
-  [[ -e /etc/valkey ]] && {
-    figlet -f smslant "$(cat </etc/valkey)" | lolcat
-    echo -e "$BARRA"
-  } || {
-    figlet -p -f smslant "@ChumoGH" | lolcat
-    echo -e "$BARRA"
-  }
+#  [[ -e /etc/valkey ]] && {
+#    figlet -f smslant "$(cat </etc/valkey)" | lolcat
+#    echo -e "$BARRA"
+#  } || {
+#    figlet -p -f smslant "@ChumoGH" | lolcat
+#    echo -e "$BARRA"
+#  }
   [[ ! $PID_GEN ]] && PID_GEN="\033[0;35m[\033[0;31mDETENIDO\033[0;35m]" || PID_GEN="\033[0;35m[\033[0;36mWORKING\033[0;35m]"
   [[ ! $PID_GEN1 ]] && PID_GEN1="\033[0;35m[\033[0;31m‼️‼️‼️‼️‼️‼️‼️\033[0;35m]" || PID_GEN1="\033[0;35m[\033[0;36m🔥🔥🔥🔥🔥🔥🔥\033[0;35m]"
   [[ ! $PID_BGEN1 ]] && {
