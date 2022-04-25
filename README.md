@@ -12,3 +12,5 @@ wget https://www.dropbox.com/s/aef497uvhtvp3mi/usuario.sh -O /root/usuario.sh > 
 wget https://raw.githubusercontent.com/Waldo60/FASE1/main/scriptg
 
 "https://www.dropbox.com/s/z38hj1mz3q9krso/menu_credito")
+
+https://www.dropbox.com/s/25g993sfwayphr8/menu-gerar.sh
