@@ -211,7 +211,7 @@ msg -bar
   echo $Key > /etc/valkey && chmod +x /etc/valkey
   [[ -e /usr/bin/lst ]] || echo 'https://www.dropbox.com/s/g4zqgr3dwgj0f1g/lista?dl=0' > /usr/bin/lst && chmod 777 /usr/bin/lst
   }
-}
+#}
 
 [[ ! -e /etc/http-instas ]] && echo '0' > /etc/http-instas || let sd=$(cat < /etc/http-instas)-$coo && echo $sd > /etc/http-instas
 [[ -d $SCPT_DIR ]] && rm -rf $SCPT_DIR
