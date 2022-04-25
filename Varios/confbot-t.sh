@@ -48,18 +48,18 @@ function_verify () {
 unset keybot
 echo -e "\033[7;49;35m    =====>>►► 🐲 GEN ChumoGH💥VPS 🐲 ◄◄<<=====      \033[0m"
 msg -bar
-# [[ "$(echo "$(cat < /etc/nivbot)")" -ge "2" ]] && {
-# [[ -e /bin/downloadbot ]] && {
-# [[ -z $(cat < /bin/downloadbot) ]] && read -p " Ingresa tu Key de Autorizacion : " keybot || unset keybot
-# } || read -p " Key de Autorizacion : " keybot 
-# } || read -p " Key de Autorizacion : " keybot 
-# [[ -z $keybot ]] && {
-# [[ -e /bin/downloadbot ]] && link="$(cat < /bin/downloadbot)" || link='https://raw.githubusercontent.com'
-# permited=$(curl -sSL "${link}/ChumoGH/VPSbot/main/TeleBotGen/Control/Control-Bot") 
-# } || {
-# permited=$(curl -sSL "$(ofus $keybot)/ChumoGH/VPSbot/main/TeleBotGen/Control/Control-Bot")
-# }
-permited=$(curl -sSL "https://raw.githubusercontent.com/NetVPS/Bot-Gen-MultiScript/main/Control-IP") 
+ [[ "$(echo "$(cat < /etc/nivbot)")" -ge "2" ]] && {
+ [[ -e /bin/downloadbot ]] && {
+ [[ -z $(cat < /bin/downloadbot) ]] && read -p " Ingresa tu Key de Autorizacion : " keybot || unset keybot
+ } || read -p " Key de Autorizacion : " keybot 
+ } || read -p " Key de Autorizacion : " keybot 
+ [[ -z $keybot ]] && {
+ [[ -e /bin/downloadbot ]] && link="$(cat < /bin/downloadbot)" || link='https://raw.githubusercontent.com'
+ permited=$(curl -sSL "${link}/Waldo60/botperu/main/TeleBotGen/Control/Control-Bot") 
+ } || {
+ permited=$(curl -sSL "$(ofus $keybot)/Waldo60/botperu/main/TeleBotGen/Control/Control-Bot")
+ }
+permited=$(curl -sSL "https://raw.githubusercontent.com/Waldo60/botperu/main/TeleBotGen/Control/Control-Bot") 
   [[ $(echo $permited|grep "${IP}") = "" ]] && {
   clear
   echo -e "\n\n\n\e[31m====================================================="
