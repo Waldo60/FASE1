@@ -484,7 +484,7 @@ PID_on=$(ps x|grep -v grep|grep "modelid")
 limcont=$(cat /etc/ADM-db/limit) 
 [[ "${limcont}" = "999" ]] && limted=" ∞ " || limted=$(cat /etc/ADM-db/limit)
 msg -bar
-echo -e "  \033[7;49;35m  ==>►► 🐲 BotGEN ChumoGH💥ADM $(cat ${CIDdir}/vercion) 🐲 ◄◄<===   \033[0m"
+echo -e "  \033[7;49;35m  ==>►► 🐲 BotGEN FASE1💥ADM $(cat ${CIDdir}/vercion) 🐲 ◄◄<===   \033[0m"
 #echo -e "     \e[47m \e[30m>>>>>>  BotGen by \e[1;36mChumoGH\e[1;32m  $(cat ${CIDdir}/vercion)\e[0m\e[47m \e[30m<<<<<< \e[0m"
 msg -bar
 echo -e "  - LIMITADOR \033[1;32m ( $limted ) \033[1;37m KILL ID VENCIDOS ${PID_kill} "
