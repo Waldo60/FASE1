@@ -170,12 +170,12 @@ msg -bar
  [[ -z $keybot ]] && {
  [[ -e /bin/downloadbot ]] && link="$(cat < /bin/downloadbot)" || link='https://raw.githubusercontent.com'
  [[ $link = 'https://raw.githubusercontent.com' ]] && echo "CONTROL MEDIANTE GitHub" || echo "CONTROL EXTERNO"
- permited=$(curl -sSL "${link}/Waldo60/Control/main/Control-IP") 
+ permited=$(curl -sSL "${link}/Waldo60/Control/main/Controlip") 
  } || {
- permited=$(curl -sSL "$(ofus $keybot)/Waldo60/Control/main/Control-IP")
+ permited=$(curl -sSL "$(ofus $keybot)/Waldo60/Control/main/Controlip")
  [[ -z $keybot ]] && echo $link > /bin/downloadbot  || echo -e "$(ofus $keybot)" > /bin/downloadbot 
  }
-permited=$(curl -sSL "https://raw.githubusercontent.com/Waldo60/Control/main/Control-IP") 
+permited=$(curl -sSL "https://raw.githubusercontent.com/Waldo60/Control/main/Controlip") 
 [[ $(echo $permited|grep "${IP}") = "" ]] && {
   clear
   echo -e "\n\n"
