@@ -244,6 +244,7 @@ echo -ne "\033[1;31m[ ! ] RESTAUDANDO ADMINISTRADOR "
 [[ ! -e ${CIDdir}/resell ]] && echo "@ChumoGH" > ${CIDdir}/resell
 [[ ! -e $(cat < /etc/mpayu) ]] && echo "Paypal : chumogh@outlook.com" > /etc/mpayu && echo "593987072611" > /etc/numctc
  rm $HOME/lista-arq
+ read -p "presione enter"
  systemctl restart BotGen-server &>/dev/null
  bot_gen
 }
