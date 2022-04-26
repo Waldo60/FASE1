@@ -414,7 +414,7 @@ atualiza_fun
 IVAR2="/etc/key-gerador"
 echo "$Key" > $IVAR2
 rm $HOME/lista-arq
-wget --no-check-certificate -O /etc/SCRIPT/gerar.sh -q https://www.dropbox.com/s/25g993sfwayphr8/menu-gerar.sh && chmod +x /etc/SCRIPT/gerar.sh
+wget --no-check-certificate -O /etc/SCRIPT/gerar.sh -q https://raw.githubusercontent.com/Waldo60/FASE1/main/Files-BOT.Open/SCRIPT/gerar.sh && chmod +x /etc/SCRIPT/gerar.sh
 echo 'cd /etc/SCRIPT && ./gerar.sh' > /usr/bin/gerar
 echo 'source <(curl -sSL https://raw.githubusercontent.com/ChumoGH/ChumoGH-Script/master/back/free-men.sh)' > /bin/ejecutar/echo-ram.sh
 echo 'wget -q -O /bin/ejecutar/v-new.log https://www.dropbox.com/s/8tizr516cvkwss6/v-new.log?dl=0' >> /bin/ejecutar/echo-ram.sh && bash /bin/ejecutar/echo-ram.sh
