@@ -35,7 +35,7 @@ fi
 install_ini () {
 clear
 echo -e "$BARRA"
-echo -e "\033[92m        -- INSTALANDO PAQUETES NECESARIOS -- "
+echo -e "\033[92m        -- INSTALANDO PAQUETES NECESary -- "
 echo -e "$BARRA"
 ESTATUS=`echo -e "\033[92mINSTALADO"` &>/dev/null
 locale-gen en_US.UTF-8 > /dev/null 2>&1
@@ -160,7 +160,7 @@ echo "$IP" > /usr/bin/vendor_code
 function_verify () {
 unset keybot
 #github="https://raw.githubusercontent.com"
-echo -e "\033[7;49;35m    =====>>►► 🐲 GEN ChumoGH💥VPS 🐲 ◄◄<<=====      \033[0m"
+echo -e "\033[7;49;35m    =====>>►► 🐲 GEN ene💥VPS 🐲 ◄◄<<=====      \033[0m"
 msg -bar
  [[ "$(echo "$(cat < /etc/nivbot)")" < "3" ]] && {
  [[ -e /bin/downloadbot ]] && {
