@@ -336,8 +336,8 @@ fun_filez $arqs > /dev/null 2>&1 && echo -e "\033[1;31m- \033[1;31m $arqs (no Tr
 n=$(($n + 1))
 done
 cd $HOME
-  [[ -e $HOME/lista ]] && rm $HOME/lista
-  [[ -d $HOME/update ]] && rm -rf $HOME/update
+#  [[ -e $HOME/lista ]] && rm $HOME/lista
+#  [[ -d $HOME/update ]] && rm -rf $HOME/update
 [[ "$lista_atualizados" != "" ]] && echo -e "${cor[5]} $lista_atualizados ${txt[206]}"
 }
 
