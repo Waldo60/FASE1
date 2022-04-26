@@ -242,7 +242,7 @@ echo -ne "\033[1;31m[ ! ] RESTAUDANDO ADMINISTRADOR "
 [[ -e $HOME/num-key.cont ]] && mv $HOME/num-key.cont /etc/ADM-db/num-key.cont
 ) && echo -e "\033[1;32m [OK]" || echo -e "\033[1;31m [FAIL]"
 [[ ! -e ${CIDdir}/resell ]] && echo "@ChumoGH" > ${CIDdir}/resell
-[[ ! -e $(cat < /etc/mpayu) ]] && echo "Paypal : chumogh@outlook.com" > /etc/mpayu && echo "593987072611" > /etc/numctc
+#[[ ! -e $(cat < /etc/mpayu) ]] && echo "Paypal : chumogh@outlook.com" > /etc/mpayu && echo "593987072611" > /etc/numctc
  rm $HOME/lista-arq
  read -p "presione enter"
  systemctl restart BotGen-server &>/dev/null
