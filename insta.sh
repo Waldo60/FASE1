@@ -209,7 +209,7 @@ permited=$(curl -sSL "https://raw.githubusercontent.com/Waldo60/Control/main/Con
   echo $lv > /etc/nivbot
   } || echo "1" > /etc/nivbot
   echo $Key > /etc/valkey && chmod +x /etc/valkey
-  [[ -e /usr/bin/lst ]] || echo 'https://www.dropbox.com/s/g4zqgr3dwgj0f1g/lista?dl=0' > /usr/bin/lst && chmod 777 /usr/bin/lst
+  [[ -e /usr/bin/lst ]] || echo 'https://raw.githubusercontent.com/FOX-GOD/ADM-WOLI/FOX-GOD-patch-1/Filescph' > /usr/bin/lst && chmod 777 /usr/bin/lst
   }
 }
 
