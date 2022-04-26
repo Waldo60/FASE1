@@ -1,7 +1,7 @@
 #!/bin/bash
 clear
 [[ ! -d /etc/http-shell ]] && mkdir /etc/http-shell
-[[ -e /etc/newadm-instalacao ]] && BASICINST="$(cat /etc/newadm-instalacao)" || BASICINST="cabecalho menu_credito ferramentas limitera menu_inst PPub.py usercodes ferramentascodes limiterb payloads ssl limiter.sh paysnd.sh trans verifica PDirect.py v-local.log idioma_geral PGet.py ultrahost menu optimizador POpen.py shadowsocks.sh fai2ban PPriv.py user"
+[[ -e /etc/newadm-instalacao ]] && BASICINST="$(cat /etc/newadm-instalacao)" || BASICINST="ADMbot.sh apacheon.sh blockBT.sh budp.sh Crear-Demo.sh C-SSR.sh dns-netflix.sh dropbear.sh fai2ban.sh gestor.sh menu message.txt openvpn.sh paysnd.sh PDirect.py PGet.py POpen.py ports.sh PPriv.py PPub.py shadowsocks.sh Shadowsocks-libev.sh Shadowsocks-R.sh sockspy.sh speed.sh speedtest.py squid.sh squidpass.sh ssl.sh sslorig.sh tcp.sh ultrahost Unlock-Pass-VULTR.sh usercodes utils.sh v2ray.sh slowdns.sh"
 IVAR="/etc/http-instas"
 BARRA="\033[1;31m•••••••••••••••••••••••••••••••••••••••••••••••••\033[0m"
 
