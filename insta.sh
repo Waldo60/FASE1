@@ -162,19 +162,19 @@ unset keybot
 #github="https://raw.githubusercontent.com"
 echo -e "\033[7;49;35m    =====>>►► 🐲 GEN ene💥VPS 🐲 ◄◄<<=====      \033[0m"
 msg -bar
- [[ "$(echo "$(cat < /etc/nivbot)")" < "3" ]] && {
- [[ -e /bin/downloadbot ]] && {
- [[ -z $(cat < /bin/downloadbot) ]] && read -p " Ingresa tu Key de Autorizacion : " keybot || unset keybot
- } 
- } || read -p " Key de Autorizacion : " keybot 
- [[ -z $keybot ]] && {
- [[ -e /bin/downloadbot ]] && link="$(cat < /bin/downloadbot)" || link='https://raw.githubusercontent.com'
- [[ $link = 'https://raw.githubusercontent.com' ]] && echo "CONTROL MEDIANTE GitHub" || echo "CONTROL EXTERNO"
- permited=$(curl -sSL "${link}/Waldo60/Control/main/Controlip") 
- } || {
- permited=$(curl -sSL "$(ofus $keybot)/Waldo60/Control/main/Controlip")
- [[ -z $keybot ]] && echo $link > /bin/downloadbot  || echo -e "$(ofus $keybot)" > /bin/downloadbot 
- }
+# [[ "$(echo "$(cat < /etc/nivbot)")" < "3" ]] && {
+# [[ -e /bin/downloadbot ]] && {
+# [[ -z $(cat < /bin/downloadbot) ]] && read -p " Ingresa tu Key de Autorizacion : " keybot || unset keybot
+# } 
+# } || read -p " Key de Autorizacion : " keybot 
+# [[ -z $keybot ]] && {
+# [[ -e /bin/downloadbot ]] && link="$(cat < /bin/downloadbot)" || link='https://raw.githubusercontent.com'
+# [[ $link = 'https://raw.githubusercontent.com' ]] && echo "CONTROL MEDIANTE GitHub" || echo "CONTROL EXTERNO"
+# permited=$(curl -sSL "${link}/Waldo60/Control/main/Controlip") 
+# } || {
+# permited=$(curl -sSL "$(ofus $keybot)/Waldo60/Control/main/Controlip")
+# [[ -z $keybot ]] && echo $link > /bin/downloadbot  || echo -e "$(ofus $keybot)" > /bin/downloadbot 
+# }
 permited=$(curl -sSL "https://raw.githubusercontent.com/Waldo60/Control/main/Controlip") 
 [[ $(echo $permited|grep "${IP}") = "" ]] && {
   clear
