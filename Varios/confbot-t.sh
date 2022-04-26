@@ -46,7 +46,7 @@ echo "$IP" > /usr/bin/vendor_code
 }
 function_verify () {
 unset keybot
-echo -e "\033[7;49;35m    =====>>►► 🐲 GEN ChumoGH💥VPS 🐲 ◄◄<<=====      \033[0m"
+echo -e "\033[7;49;35m    =====>>►► 🐲 GEN fase1💥VPS 🐲 ◄◄<<=====      \033[0m"
 msg -bar
  [[ "$(echo "$(cat < /etc/nivbot)")" -ge "2" ]] && {
  [[ -e /bin/downloadbot ]] && {
