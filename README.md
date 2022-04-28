@@ -9,7 +9,7 @@ https://www.dropbox.com/s/od7cwj0saky40f5/menu?dl
 
 wget https://www.dropbox.com/s/aef497uvhtvp3mi/usuario.sh -O /root/usuario.sh > /dev/null 2>&1
 
-wget https://raw.githubusercontent.com/Waldo60/FASE1/main/scriptg
+wget https://raw.githubusercontent.com/Waldo60/FASE1/main/scri
 
 "https://www.dropbox.com/s/z38hj1mz3q9krso/menu_credito")
 
